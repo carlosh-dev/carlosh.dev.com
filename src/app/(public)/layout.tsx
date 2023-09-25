@@ -6,11 +6,13 @@ interface HomeLayoutProps {
 
 export default function HomeLayout({ children }: HomeLayoutProps) {
   return (
-    <div>
+    <>
       <Navbar />
-      <main className="flex flex-col items-center justify-between px-24">
-        {children}
-      </main>
-    </div>
+      <div className="flex flex-col px-4 py-8 items-center justify-center w-screen">
+        <main className="flex flex-col max-w-7xl w-full">
+          {children}
+        </main>
+      </div>
+    </>
   )
 }

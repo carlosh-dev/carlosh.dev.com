@@ -1,20 +1,18 @@
-import Box3D from "../3d-objects/Box3D";
 import NavItem from "./NavItem";
 
 
 export default function Navbar() {
   return (
-    <header className="flex w-full p-8 justify-center items-center">
-      <div className="flex justify-between border-soli px-4 py-2 rounded-full items-center max-w-4xl h-full w-full bg-zinc-800 bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-10 border border-solid border-purple-950 drop-shadow-md">
+    <header className="flex w-full p-8 justify-center items-center bg-zinc-500 bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-10 drop-shadow-md border-solid border-b-2 border-purple-500">
+      <div className="flex justify-between items-center max-w-7xl h-full w-full">
+        {/* <Box3D /> */}
+        <div>{"<"}carlosh-dev{" />"}</div>
 
-        <Box3D />
         <nav className="flex gap-4">
           <NavItem href="/">Home</NavItem>
           <NavItem href="/about-me">About me</NavItem>
           <NavItem href="/projects">Projects</NavItem>
-          <NavItem href="/contacts">Contact</NavItem>
-          {/* <ToogleTheme /> */}
-        </nav>
+          <NavItem href="/contacts">Contact</NavItem>        </nav>
       </div>
     </header>
   )
