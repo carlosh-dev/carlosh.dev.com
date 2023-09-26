@@ -7,7 +7,10 @@ export default function NavItem({ children, href }: { children: ReactNode, href:
   const path = usePathname();
 
   return (
-    <Link href={href} className={`${path == "/" ? href : ""} text-zinc-200 px-4 py-2 rounded-md hover:bg-purple-800 hover:shadow-purple transition-all duration-700 active:bg-purple-900`}>
+    <Link
+      data-active={path == href}
+      href={href}
+      className={"data-[active=true]:bg-purple-900 text-zinc-200 px-4 py-2 rounded-md hover:bg-purple-800 hover:shadow-purple transition-all duration-700"}>
       {children}
     </Link>
   )

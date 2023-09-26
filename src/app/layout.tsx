@@ -1,9 +1,8 @@
 import './globals.css'
 import './reset.css'
-import { Inter } from 'next/font/google'
+import { Roboto_Mono } from 'next/font/google'
 import Providers from './providers'
-
-const inter = Inter({ subsets: ['latin'] })
+const robotoMono = Roboto_Mono({ subsets: ['latin'] })
 
 export const metadata = {
   title: 'Carlos Henrique',
@@ -17,7 +16,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${inter.className} w-screen h-screen bg-purple-50 dark:bg-zinc-900 bg-cover animation`}>
+      <body className={`${robotoMono.className} w-screen h-screen bg-purple-50 dark:bg-zinc-900 bg-cover animation`}>
         <Providers>
           {children}
         </Providers>
