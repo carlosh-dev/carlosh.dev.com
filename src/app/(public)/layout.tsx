@@ -8,11 +8,9 @@ export default function HomeLayout({ children }: HomeLayoutProps) {
   return (
     <>
       <Navbar />
-      <div className="flex flex-col px-4 py-8 items-center justify-center w-screen">
-        <main className="flex flex-col max-w-7xl w-full">
-          {children}
-        </main>
+      <div className="flex w-screen flex-col items-center justify-center px-4 py-8">
+        <main className="flex w-full max-w-5xl flex-col">{children}</main>
       </div>
     </>
-  )
+  );
 }
