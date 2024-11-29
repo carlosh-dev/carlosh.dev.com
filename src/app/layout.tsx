@@ -10,7 +10,7 @@ const robotoMono = Roboto_Mono({ weight: ['400', '500', '700'], subsets: ['latin
 
 export const metadata = {
   title: 'Carlos Henrique',
-  description: 'Keep learning. Keep growing.',
+  description: 'Keep coding. Keep learning.',
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
