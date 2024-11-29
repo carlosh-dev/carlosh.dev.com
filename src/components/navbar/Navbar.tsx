@@ -4,7 +4,8 @@ export default function Navbar() {
       <header className="fixed flex w-full flex-col items-center justify-center bg-transparent bg-opacity-10 bg-clip-padding backdrop-blur-md backdrop-filter">
         <div className="flex h-full w-full max-w-5xl items-center justify-center p-4">
           <div className="animate-fadein select-none">
-            {'<'}carlosh-<span className={'text-purple-500'}>dev</span>
+            {'<'}carlosh-
+            <span className={'bg-gradient-to-r from-violet-500 to-purple-400 bg-clip-text text-transparent'}>dev</span>
             {'/>'}
           </div>
           {/* <nav className="flex gap-4">
