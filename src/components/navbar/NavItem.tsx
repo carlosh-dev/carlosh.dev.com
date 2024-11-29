@@ -17,7 +17,7 @@ export default function NavItem({
       data-active={path == href}
       href={href}
       className={`rounded-full px-4 py-2 text-zinc-200 transition-all duration-700 
-      hover:shadow-purple data-[active=true]:text-woodsmoke-500`
+      hover:shadow-purple data-[active=true]:text-violet-500`
       }
     >
       {children}

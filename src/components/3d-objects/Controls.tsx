@@ -23,7 +23,5 @@ export const Controls = (): JSX.Element | null => {
     }
   }, [controls, invalidate])
 
-  controls.autoRotate = true
-
   return controls ? <primitive dispose={undefined} object={controls} enableDamping /> : null
 }
