@@ -20,9 +20,6 @@ dependencies:
   '@types/react-dom':
     specifier: 18.2.4
     version: 18.2.4
-  '@types/react-icons':
-    specifier: ^3.0.0
-    version: 3.0.0(react@18.2.0)
   '@types/three':
     specifier: ^0.155.1
     version: 0.155.1
@@ -472,15 +469,6 @@ packages:
     resolution: {integrity: sha512-G2mHoTMTL4yoydITgOGwWdWMVd8sNgyEP85xVmMKAPUBwQWm9wBPQUmvbeF4V3WBY1P7mmL4BkjQ0SqUpf1snw==}
     dependencies:
       '@types/react': 18.2.9
-    dev: false
-
-  /@types/react-icons@3.0.0(react@18.2.0):
-    resolution: {integrity: sha512-Vefs6LkLqF61vfV7AiAqls+vpR94q67gunhMueDznG+msAkrYgRxl7gYjNem/kZ+as2l2mNChmF1jRZzzQQtMg==}
-    deprecated: This is a stub types definition. react-icons provides its own type definitions, so you do not need this installed.
-    dependencies:
-      react-icons: 4.11.0(react@18.2.0)
-    transitivePeerDependencies:
-      - react
     dev: false
 
   /@types/react-reconciler@0.26.7:
