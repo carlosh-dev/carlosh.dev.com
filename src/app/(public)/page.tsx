@@ -1,19 +1,16 @@
-import Avatar from '@/components/Avatar';
+import Avatar from '@/components/home/Avatar';
+import Head from '@/components/home/Head';
+import Stacks from '@/components/home/Stacks';
 import LinkButton from '@/components/LinkButton';
 import { FaGithubAlt, FaLinkedinIn } from 'react-icons/fa';
 
 export default function Home() {
   return (
     <div className="flex w-full justify-center">
-      <section className="flex w-full max-w-[18.75rem] flex-col items-center py-9">
+      <section className="flex w-full max-w-[18.75rem] flex-col items-center space-y-4 py-9">
         <Avatar />
-
-        <span className="mt-8 flex w-full flex-col items-center space-y-4">
-          <h1 className="cursor-default text-2xl font-bold">E aí, Mundo!👋</h1>
-          <p className="cursor-default text-center leading-6">
-            Eu sou o <span className="text-violet-300">Carlos</span>,<br />e eu programo coisas.
-          </p>
-        </span>
+        <Head />
+        <Stacks />
 
         <p className="mt-10 cursor-default text-center text-xs">
           Se você está me procurando, você pode me encontrar em:
