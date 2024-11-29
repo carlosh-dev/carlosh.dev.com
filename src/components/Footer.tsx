@@ -1,18 +1,19 @@
-import { Roboto_Mono } from "next/font/google";
+import { Roboto_Mono } from 'next/font/google';
 
-const robotoMono = Roboto_Mono({ subsets: ["latin"] });
+const robotoMono = Roboto_Mono({ subsets: ['latin'] });
 
 export default function Footer() {
   return (
     <footer
-      className={`${robotoMono.className} flex h-20 items-center justify-center bg-zinc-900 text-center text-sm text-zinc-200`}
+      className={`${robotoMono.className} absolute bottom-0  flex h-12 w-full items-center 
+                  justify-center bg-zinc-900 text-center text-sm text-zinc-200`}
     >
-      <p>
-        Made with{" "}
+      <p className="text-xs">
+        Made with{' '}
         <span role="img" aria-label="love">
           💜
-        </span>{" "}
-        by{" "}
+        </span>{' '}
+        by{' '}
         <a
           href="https://github.com/carlosh-dev"
           target="_blank"

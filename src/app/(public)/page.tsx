@@ -1,23 +1,33 @@
+import Avatar from '@/components/Avatar';
+import LinkButton from '@/components/LinkButton';
+import { FaGithubAlt, FaLinkedinIn } from 'react-icons/fa';
+
 export default function Home() {
   return (
-    <section className="flex w-full py-9">
-      <div className="flex-1 space-y-9 ">
-        <h1 className="text-7xl">keep coding.</h1>
-        <h1 className="text-7xl">
-          keep <span className="bg-purple-950">learning</span>.
-        </h1>
-      </div>
+    <div className="flex w-full justify-center">
+      <section className="flex w-full max-w-[18.75rem] flex-col items-center py-9">
+        <Avatar />
 
-      <div className="text-1xl max-w-xs space-y-6">
-        <p>
-          Olá, <span className="text-purple-400">mundo</span>!{" "}
+        <span className="mt-8 flex w-full flex-col items-center space-y-4">
+          <h1 className="cursor-default text-2xl font-bold">E aí, Mundo!👋</h1>
+          <p className="cursor-default text-center leading-6">
+            Eu sou o <span className="text-violet-300">Carlos</span>,<br />e eu programo coisas.
+          </p>
+        </span>
+
+        <p className="mt-10 cursor-default text-center text-xs">
+          Se você está me procurando, você pode me encontrar em:
         </p>
 
-        <p className="leading-relaxed">
-          Bem-vindo ao meu site. Aqui falarei sobre quem sou e o que eu estou{" "}
-          <span className="text-purple-400">codando</span>.
-        </p>
-      </div>
-    </section>
+        <ul className="mt-6 flex w-full flex-col gap-4">
+          <LinkButton href="https://github.com/carlosh-dev/" icon={<FaGithubAlt size={24} />}>
+            Github
+          </LinkButton>
+          <LinkButton href="https://www.linkedin.com/in/carlosh-dev/" icon={<FaLinkedinIn size={24} />}>
+            Linkedin
+          </LinkButton>
+        </ul>
+      </section>
+    </div>
   );
 }

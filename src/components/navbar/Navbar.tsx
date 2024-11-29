@@ -1,21 +1,21 @@
-import NavItem from "./NavItem";
-
 export default function Navbar() {
   return (
-    <header className="flex w-full items-center justify-center border-b-2 border-solid border-purple-500 bg-zinc-500 bg-opacity-10 bg-clip-padding p-8 drop-shadow-md backdrop-blur-md backdrop-filter">
-      <div className="flex h-full w-full max-w-5xl items-center justify-between">
-        {/* <Box3D /> */}
-        <div>
-          {"<"}CarlosH<span className={"text-purple-400"}>Dev</span>
-          {"/>"}
+    <div className="sticky z-10 w-full">
+      <header className="fixed flex w-full flex-col items-center justify-center bg-transparent bg-opacity-10 bg-clip-padding backdrop-blur-md backdrop-filter">
+        <div className="flex h-full w-full max-w-5xl items-center justify-center p-4">
+          <div className="select-none">
+            {'<'}carlosh-<span className={'text-purple-500'}>dev</span>
+            {'/>'}
+          </div>
+          {/* <nav className="flex gap-4">
+            <NavItem href="/">home</NavItem>
+            <NavItem href="/about-me">about me</NavItem>
+            <NavItem href="/projects">projects</NavItem>
+            <NavItem href="/contacts">contact</NavItem>
+          </nav> */}
         </div>
-        <nav className="flex gap-4">
-          <NavItem href="/">Home</NavItem>
-          <NavItem href="/about-me">About me</NavItem>
-          <NavItem href="/projects">Projects</NavItem>
-          <NavItem href="/contacts">Contact</NavItem>
-        </nav>
-      </div>
-    </header>
+        <div className="h-1 w-full bg-gradient-to-r from-violet-500 to-purple-500  shadow-purple-300 drop-shadow-md"></div>
+      </header>
+    </div>
   );
 }

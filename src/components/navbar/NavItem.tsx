@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
-import { ReactNode } from "react";
 import { usePathname } from "next/navigation";
+import { ReactNode } from "react";
 
 export default function NavItem({
   children,
@@ -16,8 +16,8 @@ export default function NavItem({
     <Link
       data-active={path == href}
       href={href}
-      className={
-        "rounded-md px-4 py-2 text-zinc-200 transition-all duration-700 hover:bg-purple-900 hover:shadow-purple data-[active=true]:bg-purple-900"
+      className={`rounded-full px-4 py-2 text-zinc-200 transition-all duration-700 
+      hover:shadow-purple data-[active=true]:text-woodsmoke-500`
       }
     >
       {children}
