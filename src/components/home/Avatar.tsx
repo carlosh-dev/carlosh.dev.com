@@ -1,6 +1,7 @@
+'use client';
 import Image from 'next/image';
 
-export default function Avatar() {
+export default async function Avatar() {
   return (
     <div className={` relative h-[12.5rem] w-[12.5rem] rounded-full border-2 border-solid border-violet-50`}>
       <div className="w-full overflow-hidden rounded-full border-2 border-solid border-violet-200 first-letter:h-full">
