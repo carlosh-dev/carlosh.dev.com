@@ -1,15 +1,17 @@
-'use client';
+import getGithubInfos from '@/services/getGithubInfos';
 import Image from 'next/image';
 
 export default async function Avatar() {
+  const github = await getGithubInfos();
+
   return (
     <div className={` relative h-[12.5rem] w-[12.5rem] rounded-full border-2 border-solid border-violet-50`}>
       <div className="w-full overflow-hidden rounded-full border-2 border-solid border-violet-200 first-letter:h-full">
         <Image
-          src={'https://avatars.githubusercontent.com/u/56794739?v=4'}
+          src={github.avatar_url}
           width={200}
           height={200}
-          blurDataURL="https://avatars.githubusercontent.com/u/56794739?v=4"
+          blurDataURL={github.avatar_url}
           alt="My profile picture."
         />
       </div>

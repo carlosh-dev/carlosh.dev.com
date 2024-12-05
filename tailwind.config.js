@@ -1,4 +1,3 @@
-
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   darkMode: 'class',
@@ -12,8 +11,7 @@ module.exports = {
     extend: {
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+        'gradient-conic': 'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
       keyframes: {
         fadein: {
@@ -30,26 +28,24 @@ module.exports = {
           '20%, 60%': { transform: 'rotate(-10deg)' },
           '40%, 80%': { transform: 'rotate(10deg)' },
         },
-        "spin-reverse": {
+        'spin-reverse': {
           '0%': { transform: 'rotate(0deg)' },
           '100%': { transform: 'rotate(-360deg)' },
-        }
+        },
       },
       animation: {
-        'fadein': 'fadein 1s ease-in forwards',
-        'ocilate': 'ocilate 2s ease-in infinite',
+        fadein: 'fadein 1s ease-in forwards',
+        ocilate: 'ocilate 2s ease-in infinite',
         'spin-slow': 'spin 2s linear infinite',
         'spin-slow-reverse': 'spin-reverse 2s linear infinite',
-        'handshake': 'handshake 1s ease-in-out forwards',
+        handshake: 'handshake 1s ease-in-out forwards',
         'handshake-infinite': 'handshake 1s ease-in-out infinite',
       },
       boxShadow: {
-        'purple': '0px 0px 100px -5px rgba(139, 92, 246, 0.9);',
+        purple: '0px 0px 100px -5px rgba(139, 92, 246, 0.9);',
       },
-      "animation-delay": {
-
-      }
+      'animation-delay': {},
     },
   },
   plugins: [],
-}
+};
