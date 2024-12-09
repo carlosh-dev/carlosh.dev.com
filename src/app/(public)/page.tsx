@@ -1,7 +1,7 @@
-import Avatar from '@/components/home/avatar';
-import Head from '@/components/home/head';
-import Stacks from '@/components/home/stacks';
-import LinkButton from '@/components/ui/link-button';
+import Avatar from 'components/home/avatar';
+import Head from 'components/home/head';
+import Stacks from 'components/home/stacks';
+import LinkButton from 'components/ui/link-button';
 import { FaGithubAlt, FaLinkedinIn } from 'react-icons/fa';
 
 export default function Home() {

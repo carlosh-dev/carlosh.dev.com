@@ -1,5 +1,5 @@
-import getGithubInfos from '@/services/getGithubInfos';
 import Image from 'next/image';
+import getGithubInfos from 'services/getGithubInfos';
 
 export default async function Avatar() {
   const github = await getGithubInfos();
