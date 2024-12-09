@@ -5,7 +5,7 @@ import Link from 'next/link';
 
 export default function Stacks() {
   return (
-    <div className=" flex w-full   flex-wrap items-center justify-center gap-2 text-white">
+    <div className=" flex w-full   flex-wrap items-center justify-center gap-2 text-zinc-900 dark:text-white">
       <Link
         target="_blank"
         href="https://nextjs.org/"

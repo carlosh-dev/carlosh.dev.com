@@ -1,6 +1,6 @@
 export default function Head() {
   return (
-    <span className="mt-12 flex w-full flex-col items-center space-y-4">
+    <span className="mt-16 flex w-full flex-col items-center space-y-4">
       <h1 className="flex cursor-default text-2xl font-bold">
         E aí, Mundo!
         <div className="animante-delay-1000 animate-handshake [animation-delay:_2s] hover:animate-handshake-infinite">
