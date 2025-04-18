@@ -6,7 +6,7 @@ export default function Footer() {
   return (
     <footer
       className={`${robotoMono.className} absolute bottom-0 flex h-10 w-full items-center 
-                  justify-center bg-stone-50 text-center text-sm text-zinc-900 shadow-purple dark:bg-zinc-950 dark:text-zinc-200`}
+                  justify-center text-center text-sm shadow-purple text-zinc-900 dark:text-zinc-200`}
     >
       <p className="text-xs">
         Made with{' '}

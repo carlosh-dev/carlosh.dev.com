@@ -17,10 +17,10 @@ export default function Home() {
         </p>
 
         <ul className="mt-6 flex w-full flex-col gap-4">
-          <LinkButton href="https://github.com/carlosh-dev/" icon={<FaGithubAlt size={24} />}>
+          <LinkButton href="https://github.com/carlosh-dev/" icon={<FaGithubAlt size={20} />}>
             Github
           </LinkButton>
-          <LinkButton href="https://www.linkedin.com/in/carlosh-dev/" icon={<FaLinkedinIn size={24} />}>
+          <LinkButton href="https://www.linkedin.com/in/carlosh-dev/" icon={<FaLinkedinIn size={20} />}>
             Linkedin
           </LinkButton>
         </ul>
