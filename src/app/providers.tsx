@@ -1,5 +1,6 @@
 'use client';
 
+import { TooltipProvider } from 'components/ui/tooltip';
 import { ThemeProvider } from 'next-themes';
 
 interface ProvidersProps {
@@ -9,7 +10,9 @@ export default function Providers({ children }: ProvidersProps) {
   return (
     <>
       <ThemeProvider attribute="class" defaultTheme="dark" disableTransitionOnChange>
+        <TooltipProvider>
         {children}
+        </TooltipProvider>
       </ThemeProvider>
     </>
   );
