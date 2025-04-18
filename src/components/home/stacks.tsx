@@ -9,7 +9,7 @@ export default function Stacks() {
       <Link
         target="_blank"
         href="https://nextjs.org/"
-        className=" transition-all duration-300 hover:-translate-y-1 hover:text-violet-100"
+        className=" transition-all duration-300 hover:-translate-y-[-2px] hover:text-violet-100"
       >
         <TbBrandNextjs size={24} />
       </Link>

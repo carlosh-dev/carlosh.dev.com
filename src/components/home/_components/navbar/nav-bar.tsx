@@ -1,5 +1,5 @@
 'use client';
-import { ThemeToogle } from '../theme-toogle';
+import { ThemeToogle } from '../../../ui/theme-toogle';
 
 export default function Navbar() {
   return (
@@ -9,12 +9,12 @@ export default function Navbar() {
           <div className="w-[2.25rem]"></div>
           <div className="animate-fadein select-none">
             {'<'}carlosh-
-            <span className={'bg-gradient-to-r from-violet-500 to-purple-400 bg-clip-text text-transparent'}>dev</span>
+            <span className={'bg-orange-500 bg-clip-text text-transparent'}>dev</span>
             {'/>'}
           </div>
           <ThemeToogle />
         </div>
-        <div className="h-1 w-full bg-gradient-to-r from-violet-500 to-purple-500  shadow-purple-300 drop-shadow-md"></div>
+        <div className="h-1 w-full bg-orange-500"></div>
       </header>
     </div>
   );

@@ -9,7 +9,7 @@ export default function Head() {
       </h1>
       <p className="cursor-default text-center leading-6">
         Eu sou o{' '}
-        <span className="bg-gradient-to-r from-violet-500 to-purple-400 bg-clip-text text-transparent">Carlos</span>
+        <span className="bg-gradient-to-r from-orange-500 to-orange-400 bg-clip-text text-transparent">Carlos</span>
         ,
         <br />e eu programo coisas.
       </p>
